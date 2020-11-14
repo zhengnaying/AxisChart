@@ -56,6 +56,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
             android:layout_toEndOf="@+id/action_left"
             android:background="@android:color/white"
             android:src="@mipmap/up" />
@@ -66,6 +67,21 @@
             android:layout_below="@+id/action_up"
             android:background="@android:color/white"
             android:src="@mipmap/left" />
-
+        <ImageView
+            android:id="@+id/action_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/action_up"
+            android:layout_toEndOf="@+id/action_up"
+            android:background="@android:color/white"
+            android:src="@mipmap/right" />
+        <ImageView
+            android:id="@+id/action_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/action_left"
+            android:layout_toEndOf="@+id/action_left"
+            android:background="@android:color/white"
+            android:src="@mipmap/up" />
     </RelativeLayout>
 </RelativeLayout>
