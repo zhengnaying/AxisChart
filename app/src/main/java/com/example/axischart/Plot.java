@@ -36,7 +36,7 @@ public class Plot {
 
         ExpressionWithVars e = new ExpressionWithVars(m_strExp, m_strvar);
         double oldx= m_nMinX;
-        double oldy=e.evalf(m_nMinX);
+        double oldy= e.evalf(m_nMinX);
 
         double delta = ((double)(m_nMaxX - m_nMinX)) / 100;
 

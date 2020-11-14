@@ -29,9 +29,11 @@ public class CustomView extends View {
         Rect rect=new Rect();
         rect.left=0;
         rect.top=0;
-        rect.right=getWidth();
-        rect.bottom=getHeight();
+        rect.right = getWidth();
+        rect.bottom = getHeight();
+        //缩放
         canvas.scale(ix, iy, getWidth()/2, getHeight()/2);
+        //移动画布原点
         canvas.translate(dx, dy);
         Axis axis=new Axis(rect);
         axis.draw(canvas);
