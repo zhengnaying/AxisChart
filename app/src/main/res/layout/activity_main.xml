@@ -42,6 +42,30 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout2"
         android:layout_alignParentEnd="true"
-        android:background="#B0C4DE" />
+        android:background="#B0C4DE" >
 
+    </com.example.axischart.CustomView>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/action_up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/action_left"
+            android:background="@android:color/white"
+            android:src="@mipmap/up" />
+        <ImageView
+            android:id="@+id/action_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/action_up"
+            android:background="@android:color/white"
+            android:src="@mipmap/left" />
+
+    </RelativeLayout>
 </RelativeLayout>

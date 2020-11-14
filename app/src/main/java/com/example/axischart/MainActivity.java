@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     // 菜单的监听方法
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        final TextView txtFunction=findViewById(R.id.txtFunction);
         final CustomView customView=findViewById(R.id.plotview);
         switch (item.getItemId()) {
             case R.id.action_zoomin:
