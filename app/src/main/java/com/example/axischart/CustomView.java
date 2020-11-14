@@ -52,6 +52,9 @@ public class CustomView extends View {
         ix = 2.0f;
         iy = 2.0f;
     }
+    protected  void back(){
+        dx=0;dy=0;
+    }
     protected void up(){
         dy=dy+30;
     }

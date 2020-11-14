@@ -8,10 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+   ImageView up,left,right,down;
+   Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        initView();
+        EventView();
 
     }
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -58,5 +62,51 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
 
+    }
+    public void initView(){
+        up = (ImageView)findViewById(R.id.action_up);
+        left = (ImageView)findViewById(R.id.action_left);
+        right = (ImageView)findViewById(R.id.action_right);
+        down = (ImageView)findViewById(R.id.action_down);
+        back = (Button)findViewById(R.id.back);
+    }
+    public void EventView(){
+        final CustomView customView=findViewById(R.id.plotview);
+        up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customView.up();
+                customView.invalidate();
+            }
+        });
+        left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customView.left();
+                customView.invalidate();
+            }
+        });
+        right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customView.right();
+                customView.invalidate();
+            }
+        });
+        down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customView.down();
+                customView.invalidate();
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customView.NoZoom();
+                customView.back();
+                customView.invalidate();
+            }
+        });
     }
 }

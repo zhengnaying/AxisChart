@@ -82,6 +82,14 @@
             android:layout_below="@+id/action_left"
             android:layout_toEndOf="@+id/action_left"
             android:background="@android:color/white"
-            android:src="@mipmap/up" />
+            android:src="@mipmap/down" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/action_up"
+            android:layout_marginStart="10dp"
+            android:text="b" />
     </RelativeLayout>
 </RelativeLayout>
